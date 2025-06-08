@@ -1,14 +1,26 @@
 [versions]
 android-gradle                      = "8.10.1"
+compose-multiplatform               = "1.8.1"
+koin                                = "4.1.0-Beta8"
+koin-annotations                    = "2.0.0"
 kotlin                              = "2.1.21"
 ksp                                 = "2.1.21-2.0.1"
+lifecycle                           = "2.9.0"
 
 
 [plugins]
 android-application                 = { id = "com.android.application", version.ref = "android-gradle" }
 android-library                     = { id = "com.android.library", version.ref = "android-gradle" }
-kotlin                              = { id = "org.jetbrains.kotlin.android", version.ref = "kotlin" }
+compose-multiplatform               = { id = "org.jetbrains.compose", version.ref = "compose-multiplatform" }
+kotlin-android                      = { id = "org.jetbrains.kotlin.android", version.ref = "kotlin" }
+kotlin-compose-compiler             = { id = "org.jetbrains.kotlin.plugin.compose", version.ref = "kotlin" }
+kotlin-multiplatform                = { id = "org.jetbrains.kotlin.multiplatform", version.ref = "kotlin" }
 ksp                                 = { id = "com.google.devtools.ksp", version.ref = "ksp" }
 
 
 [libraries]
+koin-annotations                    = { group = "io.insert-koin", name = "koin-annotations", version.ref = "koin-annotations" }
+koin-compiler                       = { group = "io.insert-koin", name = "koin-ksp-compiler", version.ref = "koin-annotations" }
+koin-core                           = { group = "io.insert-koin", name = "koin-core", version.ref = "koin" }
+koin-compose-viewmodel              = { group = "io.insert-koin", name = "koin-compose-viewmodel", version.ref = "koin" }
+lifecycle-viewmodel-compose         = { group = "org.jetbrains.androidx.lifecycle", name = "lifecycle-viewmodel-compose", version.ref = "lifecycle" }
