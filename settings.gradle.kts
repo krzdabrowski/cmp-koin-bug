@@ -4,6 +4,7 @@ include(":app")
 include(":basic-feature-a")
 include(":basic-feature-b")
 include(":core")
+include(":umbrella-ios")
 
 pluginManagement {
     repositories {
