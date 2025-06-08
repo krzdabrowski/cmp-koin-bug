@@ -6,7 +6,7 @@ plugins {
 
 android {
     compileSdk = 35
-    namespace = "eu.krzdabrowski.cmpkoinbug.core"
+    namespace = "eu.krzdabrowski.cmpkoinbug.basicfeaturea"
 
     with (defaultConfig) {
         minSdk = 26
@@ -26,5 +26,5 @@ android {
 }
 
 dependencies {
-
+    implementation(project(":core"))
 }
