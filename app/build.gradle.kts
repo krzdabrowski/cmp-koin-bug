@@ -36,4 +36,5 @@ android {
 dependencies {
     implementation(project(":core"))
     implementation(project(":basic-feature-a"))
+    implementation(project(":basic-feature-b"))
 }

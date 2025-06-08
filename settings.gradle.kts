@@ -2,6 +2,7 @@
 
 include(":app")
 include(":basic-feature-a")
+include(":basic-feature-b")
 include(":core")
 
 pluginManagement {
